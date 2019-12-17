@@ -1,0 +1,31 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "dating app thing",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timburns1/FriendFinder.git"
+  },
+  "keywords": [
+    "date",
+    "friend",
+    "finder"
+  ],
+  "author": "Tim Burns",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timburns1/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/timburns1/FriendFinder#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
