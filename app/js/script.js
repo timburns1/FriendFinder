@@ -13,7 +13,7 @@ function createQuestions() {
     return questionArray;
 }
 
-let questions = createQuestions();
+var questions = createQuestions();
 
 $("#questionDiv").append('<div class="row"><div class="col-lg-12">');
 for (let i = 0; i < questions.length; i++) {
@@ -22,7 +22,7 @@ for (let i = 0; i < questions.length; i++) {
 
 $("#questionDiv").append('<button type="submit" class="btn btn-primary" id="submitButton">Submit</button>' + '</div></div>');
 // Chosen Dropdown Setup
-let config = {
+var config = {
     ".chosen-select": {},
     ".chosen-select-deselect": {
         allow_single_deselect: true
@@ -39,7 +39,7 @@ let config = {
 };
 
 
-for (let selector in config) {
+for (var selector in config) {
     $(selector).chosen(config[selector]);
 }
 
@@ -51,7 +51,7 @@ $("#submitButton").on("click", function (event) {
     // Make sure all form elements were selected
     function userValidation() {
         // Start with correct validation
-        let valid = true;
+        var valid = true;
         if ($("#name").val() === "") {
             valid = false;
         }

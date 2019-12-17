@@ -16,7 +16,7 @@ app.post('../friends.js', function (req, res) {
     let results = [];
     let postResponse = JSON.stringify(req.body);
 
-    fs.readFile('/app/friends.js', function (err, data) {
+    fs.readFile('../friends.js', function (err, data) {
         let friendFile = JSON.parse(data);
 
         let closestMatch = 0;
@@ -37,7 +37,7 @@ app.post('../friends.js', function (req, res) {
 
             friendFile.push(JSON.parse(postResponse));
 
-            fs.writeFile('/app/friends.js', JSON.stringify(friendFile));
+            fs.writeFile('../friends.js', JSON.stringify(friendFile));
             res.send(results[0]);
 
         }
