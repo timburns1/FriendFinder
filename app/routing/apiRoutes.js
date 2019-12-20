@@ -2,7 +2,7 @@ let fs = require('fs');
 
 module.exports = function (app, path) {
     app.get('/app/friends.js', function (req, res) {
-        fs.readFile('app/data/friends.js', 'utf8', function (err, data) {
+        fs.readFile('/app/friends.js', 'utf8', function (err, data) {
             if (err) {
                 return console.log(err);
             } else {

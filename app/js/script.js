@@ -93,7 +93,7 @@ $("#submitButton").on("click", function (event) {
             ]
         };
         // POST to api/friends.
-        $.post("/app/friends.js", formAnswers, function (data) {
+        $.post("../friends.js", formAnswers, function (data) {
             // Update the match modal with the correct name & image
             $("#friendNameDiv").html("<h2>" + data.name + "</h2>");
             $("#friendImg").attr("src", data.photo);
